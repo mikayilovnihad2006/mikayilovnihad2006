@@ -1,22 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    int bolunen, bolen, bolum, kalan;
+    printf("Tek Sayılar:\n");
+    for (int i = 1; i <= 100; i += 2) {
+        printf("%d ", i);
+    }
 
-    // Kullanıcıdan tam sayıları al
-    printf("Bolunen sayiyi girin: ");
-    scanf("%d", &bolunen);
-
-    printf("Bolen sayiyi girin: ");
-    scanf("%d", &bolen);
-
-    // Bölme işlemi
-    bolum = bolunen / bolen;
-    kalan = bolunen % bolen;
-
-    // Sonuçları ekrana yazdır
-    printf("Bolum: %d\n", bolum);
-    printf("Kalan: %d\n", kalan);
+    printf("\nÇift Sayılar:\n");
+    for (int i = 2; i <= 100; i += 2) {
+        printf("%d ", i);
+    }
 
     return 0;
-}
+
